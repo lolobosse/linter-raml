@@ -1,14 +1,18 @@
 {
   "name": "linter-raml",
-  "linter-package": true,
+  "activationCommands": [],
   "main": "./lib/init",
   "version": "0.0.1",
-  "description": "Raml Linter using raml-cop",
+  "description": "Lint RAML using raml-cop",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-    "shelljs": "^0.2.6"
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
   }
 }
